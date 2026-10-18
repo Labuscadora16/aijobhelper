@@ -129,12 +129,13 @@ export default function Home() {
         </section>
 
         <section>
-          <h2 className="section-title">Weekly Newsletter</h2>
+          <h2 className="section-title">AIJobHelper Weekly</h2>
           <p style={{ color: 'var(--muted)', marginBottom: '1rem', maxWidth: '32rem' }}>
-            One system or refinement + fresh Field Notes each week. Clear context and limitations. No filler.
+            Practical systems and real Field Notes, delivered weekly. 
+            Clear context, honest limitations, no filler. We only send when there’s something worth your time.
           </p>
           <p style={{ color: 'var(--muted)' }}>
-            Newsletter launching on Substack soon as <strong>AIJobHelper Weekly</strong>.
+            Newsletter launching on Substack soon.
           </p>
         </section>
       </main>
