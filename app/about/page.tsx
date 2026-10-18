@@ -7,7 +7,7 @@ export default function About() {
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <Link href="/" className="logo">AIJobHelper</Link>
           <nav style={{ display: 'flex', gap: '1.5rem', fontSize: '0.95rem' }}>
-            <Link href="/" style={{ color: 'var(--muted)' }}>Systems</Link>
+            <Link href="/" style={{ color: 'var(--muted)' }}>Home</Link>
             <Link href="/about" style={{ color: 'var(--fg)' }}>About</Link>
           </nav>
         </div>
@@ -17,22 +17,26 @@ export default function About() {
         <h1 style={{ fontSize: '2rem', marginBottom: '1.5rem', letterSpacing: '-0.02em' }}>About</h1>
 
         <p style={{ color: 'var(--muted)', marginBottom: '1.25rem' }}>
-          AIJobHelper collects and refines practical systems for using AI to land jobs and advance careers.
+          AIJobHelper has two parts:
         </p>
 
         <p style={{ color: 'var(--muted)', marginBottom: '1.25rem' }}>
-          The focus is on methods that are clear, constrained, and honest about limitations. 
-          Most AI career advice is either too vague or overclaims what the tools can do. 
-          This site aims for the opposite: usable processes with explicit boundaries.
+          <strong style={{ color: 'var(--fg)' }}>Systems</strong> — constrained, reusable methods for using AI 
+          in job search and career moves. Each one includes when it works, important limitations, and a clear prompt.
         </p>
 
         <p style={{ color: 'var(--muted)', marginBottom: '1.25rem' }}>
-          Each system is designed to be run with any capable AI (Claude, ChatGPT, Grok, and others). 
-          You supply the real inputs. The system provides structure so the output stays truthful and useful.
+          <strong style={{ color: 'var(--fg)' }}>Field Notes</strong> — real examples of what people are actually 
+          doing with AI in their job search, sourced from public posts. These are updated as new signal appears.
+        </p>
+
+        <p style={{ color: 'var(--muted)', marginBottom: '1.25rem' }}>
+          The goal is a living resource: practical methods plus fresh real-world signal, so the site is worth 
+          returning to.
         </p>
 
         <p style={{ color: 'var(--muted)', marginBottom: '2rem' }}>
-          New systems and deeper breakdowns are added over time. A weekly newsletter covers one system in more depth.
+          Weekly newsletter (AIJobHelper Weekly) will cover one system or refinement plus new Field Notes.
         </p>
 
         <p style={{ color: 'var(--muted)' }}>
