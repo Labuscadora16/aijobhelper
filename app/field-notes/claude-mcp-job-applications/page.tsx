@@ -15,46 +15,58 @@ export default function FieldNote() {
 
       <main className="container" style={{ maxWidth: '42rem', paddingBottom: '4rem' }}>
         <Link href="/" style={{ color: 'var(--muted)', fontSize: '0.9rem' }}>← Home</Link>
+
+        <div style={{ marginTop: '1.5rem', marginBottom: '0.5rem' }}>
+          <span className="tag">Field Note</span>
+          <span className="tag">Claude</span>
+        </div>
         
-        <h1 style={{ fontSize: '1.85rem', margin: '1.5rem 0 0.75rem', letterSpacing: '-0.02em' }}>
+        <h1 style={{ fontSize: '1.85rem', margin: '0.75rem 0', letterSpacing: '-0.02em' }}>
           Claude MCP that searches and applies to jobs
         </h1>
-        <p style={{ color: 'var(--muted)', marginBottom: '0.5rem' }}>Source: Reddit r/ClaudeAI · October 2026</p>
+        
+        <p style={{ color: 'var(--muted)', fontSize: '1.1rem', marginBottom: '2rem' }}>
+          A builder created an MCP server so Claude can search a jobs database, tailor resumes, and submit applications with user approval.
+        </p>
 
-        <section style={{ marginBottom: '2rem', marginTop: '2rem' }}>
-          <h2 style={{ fontSize: '1.15rem', marginBottom: '0.6rem' }}>What they did</h2>
+        <section style={{ marginBottom: '2rem' }}>
+          <h2 style={{ fontSize: '1.15rem', marginBottom: '0.75rem' }}>What they did</h2>
+          <p style={{ color: 'var(--muted)', marginBottom: '1rem' }}>
+            After a family member was laid off, the author began building a job-search platform. The most common follow-up question was whether the same capability could live inside Claude itself. They built an MCP server that lets Claude search a jobs database, match roles against a resume, generate tailored versions, and submit applications on employer career pages once the user approves.
+          </p>
           <p style={{ color: 'var(--muted)' }}>
-            A builder created an MCP server that lets Claude search a jobs database, match against a resume, 
-            generate tailored resumes, and submit applications on employer sites once the user approves. 
-            The system grew out of an earlier job-search platform started after a family layoff.
+            The system went through heavy dogfooding. The team applied to real jobs, noted friction points, and iterated until the core flow felt reliable enough to launch.
           </p>
         </section>
 
         <section style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.15rem', marginBottom: '0.6rem' }}>What happened</h2>
+          <h2 style={{ fontSize: '1.15rem', marginBottom: '0.75rem' }}>How it went</h2>
           <p style={{ color: 'var(--muted)' }}>
-            The MCP launched with early traction (hundreds of users). The author reported 83 interviews 
-            per 100 paid subscribers who used the autopilot submission feature. They emphasized dogfooding 
-            and iterative fixes based on real application attempts.
+            The MCP launched with early traction (hundreds of users and dozens of daily actives). The author reported 83 interviews per 100 paid subscribers who used the autopilot submission feature. They emphasized that keeping a human approval step before final submission was important for quality control.
           </p>
         </section>
 
         <section style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.15rem', marginBottom: '0.6rem' }}>Takeaway</h2>
+          <h2 style={{ fontSize: '1.15rem', marginBottom: '0.75rem' }}>Key takeaway</h2>
           <p style={{ color: 'var(--muted)' }}>
-            Full automation of applications is possible but still benefits from a human approval step. 
-            The interesting part is the combination of search + tailoring + controlled submission inside 
-            the same Claude conversation via MCP.
+            Full application automation is becoming practical inside Claude via MCP, but the highest-performing setups still keep a review gate before anything is sent. The combination of search + tailoring + controlled submission in one conversation is the real advance.
           </p>
+        </section>
+
+        <section style={{ marginBottom: '2rem' }}>
+          <h2 style={{ fontSize: '1.15rem', marginBottom: '0.75rem' }}>Caveats</h2>
+          <ul style={{ color: 'var(--muted)', paddingLeft: '1.25rem' }}>
+            <li>Results are self-reported by the builder</li>
+            <li>Auto-submission quality depends entirely on the tailoring step</li>
+            <li>Most people will still want final approval control</li>
+          </ul>
         </section>
 
         <section>
-          <h2 style={{ fontSize: '1.15rem', marginBottom: '0.6rem' }}>Caveats</h2>
-          <ul style={{ color: 'var(--muted)', paddingLeft: '1.25rem' }}>
-            <li>Results are self-reported</li>
-            <li>Auto-submission carries risk if the tailoring quality slips</li>
-            <li>Most users will still want review control</li>
-          </ul>
+          <h2 style={{ fontSize: '1.15rem', marginBottom: '0.75rem' }}>Source</h2>
+          <p style={{ color: 'var(--muted)' }}>
+            Reddit r/ClaudeAI · October 2026
+          </p>
         </section>
       </main>
 
