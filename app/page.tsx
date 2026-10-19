@@ -43,26 +43,23 @@ const fieldNotes = [
   {
     slug: 'claude-mcp-job-applications',
     title: 'Claude MCP that searches and applies to jobs',
-    description: 'Builder created an MCP server so Claude can search jobs, tailor resumes, and submit applications with approval. Reported 83 interviews per 100 paid subscribers on autopilot.',
-    tags: ['Claude', 'Automation']
-  },
-  {
-    slug: '119-interviews-playbook',
-    title: '119 interviews in 6 months with ChatGPT + Claude',
-    description: 'After a layoff, one person interviewed at 49 companies (119 total rounds) and landed 2 offers. Heavy use of ChatGPT and Claude for profile, resume, and prep.',
-    tags: ['ChatGPT', 'Claude']
+    description: 'Builder created an MCP server so Claude can search jobs, tailor resumes, and submit applications with approval. Reported strong interview rates on the paid autopilot feature.',
+    tags: ['Claude', 'Automation'],
+    source: 'Reddit r/ClaudeAI'
   },
   {
     slug: 'claude-remote-job-filter',
     title: 'Claude Code filter for genuinely remote roles',
-    description: 'Local Claude Code skill that reads actual job descriptions to separate real remote from hybrid or fake-remote. Cut 238 PM postings to 8 that met strict criteria.',
-    tags: ['Claude Code', 'Remote']
+    description: 'Local Claude Code workflow that reads actual job descriptions to separate real remote from hybrid or unclear postings. One run cut hundreds of PM listings down to a small set that met strict criteria.',
+    tags: ['Claude Code', 'Remote'],
+    source: 'Reddit r/RemoteJobs'
   },
   {
     slug: 'daily-ai-scored-job-alerts',
     title: 'Daily AI-scored job alerts with Claude',
-    description: 'n8n + Apify + Claude workflow that pulls new ATS jobs, scores them for fit, and sends only top matches via Telegram or Gmail.',
-    tags: ['Claude', 'Automation']
+    description: 'n8n + Apify + Claude workflow that pulls new jobs from ATS career pages, scores them for fit, and sends only the top matches via Telegram or Gmail.',
+    tags: ['Claude', 'Automation'],
+    source: 'Reddit r/n8n'
   }
 ]
 
@@ -84,7 +81,7 @@ export default function Home() {
           <h1>Practical AI systems for landing jobs and advancing your career.</h1>
           <p>
             Real methods and real examples. Each system includes constraints and failure modes. 
-            Field Notes show what people are actually doing.
+            Field Notes link to public sources.
           </p>
         </section>
 
@@ -101,7 +98,7 @@ export default function Home() {
         <section>
           <h2 className="section-title">Field Notes</h2>
           <p className="section-desc">
-            Real examples of people using AI in their job search. Sourced from public posts. Updated as new signal appears.
+            Real examples of people using AI in their job search. Each one links to a public source.
           </p>
           <div className="grid">
             {fieldNotes.map((note) => (
@@ -113,6 +110,7 @@ export default function Home() {
                     {note.tags.map((tag) => (
                       <span key={tag} className="tag">{tag}</span>
                     ))}
+                    <span className="tag">{note.source}</span>
                   </div>
                   <span className="view-link">View details →</span>
                 </div>

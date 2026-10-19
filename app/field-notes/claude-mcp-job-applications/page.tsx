@@ -6,7 +6,7 @@ export default function FieldNote() {
       <header>
         <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <Link href="/" className="logo">AIJobHelper</Link>
-          <nav style={{ display: 'flex', gap: '1.5rem', fontSize: '0.95rem' }}>
+          <nav style={{ display: 'flex', gap: '1.5rem', fontSize: '0.9rem' }}>
             <Link href="/" style={{ color: 'var(--muted)' }}>Home</Link>
             <Link href="/about" style={{ color: 'var(--muted)' }}>About</Link>
           </nav>
@@ -25,47 +25,41 @@ export default function FieldNote() {
           Claude MCP that searches and applies to jobs
         </h1>
         
-        <p style={{ color: 'var(--muted)', fontSize: '1.1rem', marginBottom: '2rem' }}>
+        <p style={{ color: 'var(--muted)', fontSize: '1.05rem', marginBottom: '2rem' }}>
           A builder created an MCP server so Claude can search a jobs database, tailor resumes, and submit applications with user approval.
         </p>
 
         <section style={{ marginBottom: '2rem' }}>
           <h2 style={{ fontSize: '1.15rem', marginBottom: '0.75rem' }}>What they did</h2>
           <p style={{ color: 'var(--muted)', marginBottom: '1rem' }}>
-            After a family member was laid off, the author began building a job-search platform. The most common follow-up question was whether the same capability could live inside Claude itself. They built an MCP server that lets Claude search a jobs database, match roles against a resume, generate tailored versions, and submit applications on employer career pages once the user approves.
-          </p>
-          <p style={{ color: 'var(--muted)' }}>
-            The system went through heavy dogfooding. The team applied to real jobs, noted friction points, and iterated until the core flow felt reliable enough to launch.
+            The author built a job-search platform and then an MCP server so the same capabilities could run inside Claude. 
+            Users can search jobs, match them against a resume, get tailored versions, and have applications submitted 
+            on employer sites once they approve.
           </p>
         </section>
 
         <section style={{ marginBottom: '2rem' }}>
           <h2 style={{ fontSize: '1.15rem', marginBottom: '0.75rem' }}>How it went</h2>
           <p style={{ color: 'var(--muted)' }}>
-            The MCP launched with early traction (hundreds of users and dozens of daily actives). The author reported 83 interviews per 100 paid subscribers who used the autopilot submission feature. They emphasized that keeping a human approval step before final submission was important for quality control.
+            The post reports early traction and interview rates on the paid autopilot feature. 
+            The author emphasizes keeping a human approval step before final submission.
           </p>
         </section>
 
         <section style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.15rem', marginBottom: '0.75rem' }}>Key takeaway</h2>
+          <h2 style={{ fontSize: '1.15rem', marginBottom: '0.75rem' }}>Takeaway</h2>
           <p style={{ color: 'var(--muted)' }}>
-            Full application automation is becoming practical inside Claude via MCP, but the highest-performing setups still keep a review gate before anything is sent. The combination of search + tailoring + controlled submission in one conversation is the real advance.
+            Application automation inside Claude via MCP is becoming practical. 
+            The most careful setups still keep a review gate before anything is sent.
           </p>
-        </section>
-
-        <section style={{ marginBottom: '2rem' }}>
-          <h2 style={{ fontSize: '1.15rem', marginBottom: '0.75rem' }}>Caveats</h2>
-          <ul style={{ color: 'var(--muted)', paddingLeft: '1.25rem' }}>
-            <li>Results are self-reported by the builder</li>
-            <li>Auto-submission quality depends entirely on the tailoring step</li>
-            <li>Most people will still want final approval control</li>
-          </ul>
         </section>
 
         <section>
           <h2 style={{ fontSize: '1.15rem', marginBottom: '0.75rem' }}>Source</h2>
           <p style={{ color: 'var(--muted)' }}>
-            Reddit r/ClaudeAI · October 2026
+            <a href="https://www.reddit.com/r/ClaudeAI/comments/1x60bmf/i_built_an_mcp_server_with_claude_code_that_lets/" target="_blank" rel="noopener noreferrer">
+              Reddit r/ClaudeAI — original post
+            </a>
           </p>
         </section>
       </main>
